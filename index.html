@@ -140,8 +140,37 @@
                         <h2 class="text-pretitle animate-on-load">A propos de moi</h2>
     
                         <p class="text-huge-title">
-                       Étudiant bilingue anglais et français en 2ème année de BUT Techniques de commercialisation en Business International
-                        </p>
+                       Étudiant bilingue anglais et français en 2ème année de BUT Techniques de commercialisation en Business International</p>
+                     
+			<style>
+        #videoContainer {
+            display: none; /* La vidéo est cachée par défaut */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align:center;align-items:center;" class="canvas-container">
+    <button id="showVideoButton">Vidéo d'introduction</button>
+    
+    <!-- Conteneur de la vidéo -->
+    <div id="videoContainer">
+        <video src="documents/portfolio.mp4" controls width="700">
+            Votre navigateur ne supporte pas la lecture des vidéos HTML5.
+        </video>
+    </div>
+
+    <script>
+        // Sélectionner le bouton et le conteneur de la vidéo
+        const showVideoButton = document.getElementById('showVideoButton');
+        const videoContainer = document.getElementById('videoContainer');
+
+        // Ajouter un gestionnaire d'événements pour le clic
+        showVideoButton.addEventListener('click', () => {
+            videoContainer.style.display = 'block'; // Afficher la vidéo
+        });
+    </script>	
+			
                     </div>
                 </div>
 
